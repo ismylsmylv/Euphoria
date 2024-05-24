@@ -4,7 +4,7 @@ const initialState = {
     feedbacks: [],
 }
 
-const FEEDBACKS_URL = "http://localhost:3000/feedbacks"
+const FEEDBACKS_URL = "https://euphoriabackend.onrender.com/feedbacks"
 
 export const fetchFeedbacks = createAsyncThunk(
     "feedbacks/fetchFeedbacks",

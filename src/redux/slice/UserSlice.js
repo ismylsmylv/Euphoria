@@ -12,8 +12,8 @@ const initialState = {
   users: [],
 };
 
-const USERS_URL = "http://localhost:3000/users";
-const PRODUCTS_URL = "http://localhost:3000/products";
+const USERS_URL = "https://euphoriabackend.onrender.com/users";
+const PRODUCTS_URL = "https://euphoriabackend.onrender.com/products";
 
 export const fetchUsers = createAsyncThunk("user/fetchUsers", async () => {
   try {

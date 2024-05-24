@@ -4,7 +4,7 @@ const initialState = {
   hero: [],
 };
 
-const HEROS = "http://localhost:3000/hero";
+const HEROS = "https://euphoriabackend.onrender.com/hero";
 
 export const fetchHero = createAsyncThunk("hero/fetchHero", async () => {
   try {

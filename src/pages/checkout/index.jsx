@@ -110,7 +110,7 @@ const Checkout = () => {
           <div className={style["pay-btn"]}>
             <button onClick={() => {
               navigate('/confirmed-order')
-              axios.post('http://localhost:3000/purchases', basket)
+              axios.post('https://euphoriabackend.onrender.com/purchases', basket)
             }}>
               Pay now
             </button>

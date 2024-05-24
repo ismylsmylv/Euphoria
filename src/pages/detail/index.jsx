@@ -15,7 +15,7 @@ function ProductDetail() {
   const [product, setProduct] = useState([])
   useEffect(() => {
     // dispatch(fetchProducts())
-    axios.get('http://localhost:3000/products/' + id).then((res) => {
+    axios.get('https://euphoriabackend.onrender.com/products/' + id).then((res) => {
       setProduct(res.data)
     }).then(() => {
 

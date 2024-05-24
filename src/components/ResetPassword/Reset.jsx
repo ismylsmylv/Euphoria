@@ -7,7 +7,7 @@ import Button from '../SigninNavbar/Button';
 import { useTranslation } from 'react-i18next';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import { Link,useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 // import './sign-up.css'
 
@@ -16,7 +16,7 @@ import axios from 'axios';
 const Reset = () => {
 
     const navigate
- =useNavigate()
+        = useNavigate()
     const [type, setType] = useState('password')
     const [icon, setIcon] = useState(IoIosEyeOff)
 
@@ -43,9 +43,9 @@ const Reset = () => {
     // formik
     const handleSubmit = async (values, { setSubmitting }) => {
         setSubmitting(true);
-        const response = await axios.get('http://localhost:3000/login', values)
+        const response = await axios.get('https://euphoriabackend.onrender.com/login', values)
         const users = response.data
-        const userFinder = users.find(item => item.name === values.name )
+        const userFinder = users.find(item => item.name === values.name)
 
         if (userFinder) {
             console.log('success')

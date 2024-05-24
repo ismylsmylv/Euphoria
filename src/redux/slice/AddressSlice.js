@@ -6,7 +6,7 @@ const initialState = {
   addresses: [],
 };
 
-const ADDRESSES_URL = "http://localhost:3000/users";
+const ADDRESSES_URL = "https://euphoriabackend.onrender.com/users";
 const userId = "1";
 
 export const fetchAddresses = createAsyncThunk(

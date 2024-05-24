@@ -47,7 +47,7 @@ const Signin = () => {
     // formik
     const handleSubmit = async (values, { setSubmitting }) => {
         setSubmitting(true);
-        const response = await axios.get('http://localhost:3000/users', values)
+        const response = await axios.get('https://euphoriabackend.onrender.com/users', values)
         const users = response.data
         const userFinder = users.find(item => item.name === values.name && item.password === values.password)
 
@@ -107,7 +107,7 @@ const Signin = () => {
                                         <p className='text-right underline  lg:text-sm md:text-xl '>{t("pass")} </p>
                                     </div>
                                     <div className="flex flex-col items-start pt-3">
-                                            <Button text={t("sign_in")} disabled={isSubmitting} btnClass='btn-register' />
+                                        <Button text={t("sign_in")} disabled={isSubmitting} btnClass='btn-register' />
                                         <Link to='/sign-up'>
                                             <p className=' text-gray-700 md:text-xl lg:text-sm pt-2'>{t("account")}  <bold className='bolder underline '>  {t("signup")}  </bold></p>
                                         </Link>

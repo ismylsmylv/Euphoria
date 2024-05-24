@@ -5,7 +5,7 @@ const initialState = {
   results: []
 }
 
-const PRODUCTS_URL = "http://localhost:3000/products"
+const PRODUCTS_URL = "https://euphoriabackend.onrender.com/products"
 
 export const fetchProducts = createAsyncThunk(
   "products/fetchProducts",

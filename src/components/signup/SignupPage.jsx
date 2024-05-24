@@ -44,7 +44,7 @@ const SignupPage = () => {
 
     // formik
     const handleSubmitSignUp = (values, { setSubmitting }) => {
-        axios.post('http://localhost:3000/users', values)
+        axios.post('https://euphoriabackend.onrender.com/users', values)
             .then(res => {
                 console.log(res.data)
                 navigate('/')

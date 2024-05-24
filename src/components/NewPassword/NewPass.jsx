@@ -41,7 +41,7 @@ const NewPass = () => {
     // formik
     const handleSubmit = async (values, { setSubmitting }) => {
         setSubmitting(true);
-        const response = await axios.get('http://localhost:3000/login', values)
+        const response = await axios.get('https://euphoriabackend.onrender.com/login', values)
         const users = response.data
 
         const matchPassword = users.find(item => item.password === values.password)
