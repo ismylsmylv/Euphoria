@@ -1,0 +1,25 @@
+.new {
+  color: #8a33fd;
+}
+
+#clothing {
+  width: 100%;
+  padding: 60px 60px;
+}
+
+#head {
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  .new-rec {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.cards {
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px 66px;
+}
